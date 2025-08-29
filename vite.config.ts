@@ -14,6 +14,7 @@ export default defineConfig(({ mode }) => ({
     mode === 'development' &&
     componentTagger(),
   ].filter(Boolean),
+  base: "https://infrastations.github.io/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
