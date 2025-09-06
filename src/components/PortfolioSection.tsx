@@ -212,6 +212,11 @@ function ProjectCard({ project, index, onViewDetails }: {
       <div className="card-neon h-full overflow-hidden">
         {/* Project Image */}
         <div className="relative h-48 mb-6 rounded-xl overflow-hidden bg-gradient-to-br from-primary/20 to-secondary/20">
+          <img 
+            src={project.image} 
+            alt={project.title}
+            className="w-full h-full object-cover"
+          />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10" />
           <div className="absolute top-4 right-4 z-20">
             <span className="px-3 py-1 bg-card/90 backdrop-blur-sm rounded-full text-xs font-medium text-primary border border-primary/20">
